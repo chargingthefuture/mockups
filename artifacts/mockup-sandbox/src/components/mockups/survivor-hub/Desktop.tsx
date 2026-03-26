@@ -47,7 +47,6 @@ export function Desktop() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState(CHAT_MESSAGES);
   const [section, setSection] = useState<"chat" | "apps">("chat");
-  const [trustState, setTrustState] = useState<"empty" | "verified">("empty");
 
   const handleSend = () => {
     if (!input.trim()) return;
